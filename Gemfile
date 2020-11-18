@@ -64,12 +64,12 @@ group :development, :test do
   gem "sqlite3"
 end
 
-group :test do
-  gem "capybara", ">= 2.15"
-  gem "chromedriver-helper"
-  gem "selenium-webdriver"
-end
-group :production do
-  gem "rails_12factor", "0.0.2"
-  gem "fog", "1.42"
-end
+# group :test do
+#   gem "capybara", ">= 2.15"
+#   gem "chromedriver-helper"
+#   gem "selenium-webdriver"
+# end
+# group :production do
+#   gem "rails_12factor", "0.0.2"
+#   gem "fog", "1.42"
+# end
