@@ -7,7 +7,7 @@ class AccountsController < ApplicationController
     @search = Account.ransack params[:q]
     @accounts = @search.result.paginate page: params[:page],  per_page: Settings.size.page
   end
-
+ 
   def show
   end
 
@@ -26,8 +26,8 @@ class AccountsController < ApplicationController
       render :new
     end
   end
-
-  def edit;
+  
+  def edit
     @account = @account = Account.find(params[:id])
     account_owner(@account.id)
   end
