@@ -7,7 +7,7 @@ class AccountsController < ApplicationController
     @search = Account.ransack params[:q]
     @accounts = @search.result.paginate page: params[:page],  per_page: Settings.size.page
   end
-
+ 
   def show
   end
 
